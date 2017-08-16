@@ -1,4 +1,4 @@
-% made by :- 
+% made by :- Sandeep Gupta & Aditya Dhawan
 
 % Range to find the maximum value
 x1 = [-3.0,12.1];
