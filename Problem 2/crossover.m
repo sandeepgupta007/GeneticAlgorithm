@@ -1,6 +1,6 @@
 function [ A,B ] = crossover( parentA , parentB)
 
-% One point crossover, 
+% single point crossover 
 
 l = length(parentA);
 r = randi([1,l]);

@@ -1,6 +1,6 @@
 function [ childA ] = mutation( A , prob)
 
-% Mutation depending on the size of chromosome and the probablity
+% Mutation of parent using probablity 0f 0.01 in general
 
 for i = 1:floor(prob*length(A)+1)
     r = randi([1,length(A)]);

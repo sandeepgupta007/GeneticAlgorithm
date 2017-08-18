@@ -83,9 +83,9 @@ for i = 1:10
         end
         count=count+1;
         if(count == 2)
-            [A,B] = crossover(population(1,i),population(1,j));
-            population(1,i) = A;
-            population(1,j) = B;
+            [A,B] = crossover(population(i,:),population(j,:));
+            population(i,:) = A;
+            population(j,:) = B;
             count = 0;
         end
     end
@@ -94,12 +94,12 @@ end
 % Mutation pm = 0.01
 
 for i = 1:10
-    population(1,i) = mutation(population(1,i),0.01);
+    population(i,:) = mutation(population(i,:),0.01);
 end
 
 end
 
-disp(maxi);
-disp(answer);
-disp(gen);
+fprintf('Maximum Value %d \n \n',maxi);
+fprintf('x1 = %d, x2 = %d \n \n',answer(1,1),answer(1,2));
+fprintf('Generation (Maximum value occured) - %d \n \n',gen);
 

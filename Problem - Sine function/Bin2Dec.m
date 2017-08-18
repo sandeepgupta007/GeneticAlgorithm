@@ -1,6 +1,7 @@
 function [ output ] = Bin2Dec( Arr,N , M)
-%UNTITLED5 Summary of this function goes here
-%   Detailed explanation goes here
+
+% conversion of binary to decimal 
+
 x1 = 0;
 for i = N:-1:1
     x1 = x1+Arr(1,i)*(2^(N-i));
